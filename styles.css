@@ -1,0 +1,283 @@
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  align-items: center;
+  margin-bottom: 2px;
+  padding: 8px 15px;
+  z-index: 1000;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #7289dd;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+#home {
+  margin: 0 auto;
+  padding: 13px;
+  min-height: 100vh;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#home img {
+  position: absolute;
+  border-radius: 10px;
+  width: 98%;
+  height: 96%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.9);
+}
+
+#home p {
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 900;
+  color: white;
+  opacity: 50%;
+}
+
+#info {
+  margin: 0 auto;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 13px;
+}
+
+#info img {
+  width: 35%;
+  height: 50%;
+  border-radius: 80px 0;
+  margin-right: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+#info h1,
+#info p {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  z-index: 1;
+}
+
+#info h1 {
+  font-size: 3vw;
+  margin: 20px 0;
+}
+
+#info p {
+  font-size: 1.5vw;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+#fakta {
+  margin: 0 auto;
+  padding: 13px;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+  width: 18%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: left;
+  min-height: 300px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s ease, color 0.3s ease-in;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 110px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.card-content p {
+  text-align: start;
+  font-size: smaller;
+  color: #000000;
+  line-height: 1.4;
+  margin-top: 8px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  transition: color 0.2s ease;
+}
+
+.card:hover {
+  background-color: #7289dd;
+  color: white;
+}
+
+.card:hover h3,
+.card:hover p {
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#galeri img {
+  height: 360px;
+  width: auto;
+  margin: 3px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.galeri-item-1,
+.galeri-item-5 {
+  width: 100px;
+  height: 100px;
+}
+
+#galeri img:hover {
+  filter: brightness(0.8);
+}
+
+#lokasi {
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.responsive-map {
+  width: 100%;
+  max-width: 1800px;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
